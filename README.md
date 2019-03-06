@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Basic workings - 
 
-Things you may want to cover:
+Hit a form with your email/password.
+Send to controller
 
-* Ruby version
+[Use admin_intiiate_auth in your controller](https://docs.aws.amazon.com/sdkforruby/api/Aws/CognitoIdentityProvider/Client.html#admin_initiate_auth-instance_method)
 
-* System dependencies
+Send display token on screen/return in API response.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Just look at AWS intiializer, Auth controller, callback page. Done.
