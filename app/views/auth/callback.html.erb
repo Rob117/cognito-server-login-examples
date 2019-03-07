@@ -1,5 +1,8 @@
-<% data = JSON.parse @response.body.to_s %>
+<% data = JSON.parse @response %>
 ID Token: <%= data["id_token"] %>
 <br>
 <br>
 Refresh Token: <%= data["refresh_token"] %>
+<br>
+<br>
+Raw Response: <%= @response %>

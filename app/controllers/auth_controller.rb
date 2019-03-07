@@ -3,7 +3,7 @@ class AuthController < ApplicationController
   before_action  do
     @client_id = "5d39i7ngqp27mfvsd70m0mq8o8"
     @domain = "https://wevox-test.auth.ap-northeast-1.amazoncognito.com"
-    @redirect_uri = "https://d2sgl1ucddhxpa.cloudfront.net/cognito/"
+    @redirect_uri = "https://4109b51e.ngrok.io/cognito/"
   end
   def index; end
 
@@ -18,7 +18,7 @@ class AuthController < ApplicationController
     # auth_params = [ ["grant_type", "authorization_code"], ["code", params[:code]], ["client_id", @client_id], ["redirect_uri", @redirect_uri]  ]
     # @response = Net::HTTP.post_form(uri, auth_params)
     # Can I get this to work with the cognito SDK?
-    @response = HTTP.post("#{@domain}/oauth2/token", form: {"grant_type" => "authorization_code", "code" => params[:code], "client_id" => @client_id, "redirect_uri" => @redirect_uri})
+    @response = (HTTP.post("#{@domain}/oauth2/token", form: {"grant_type" => "authorization_code", "code" => params[:code], "client_id" => @client_id, "redirect_uri" => @redirect_uri})).body.to_s
   end
 
   def api
