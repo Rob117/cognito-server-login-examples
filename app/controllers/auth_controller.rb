@@ -14,11 +14,8 @@ class AuthController < ApplicationController
 
   # generate tokens, return tokens with code auth challenge
   def callback
-    # uri = URI.parse("#{@domain}/oauth2/token")
-    # auth_params = [ ["grant_type", "authorization_code"], ["code", params[:code]], ["client_id", @client_id], ["redirect_uri", @redirect_uri]  ]
-    # @response = Net::HTTP.post_form(uri, auth_params)
-    # Can I get this to work with the cognito SDK?
-    @response = (HTTP.post("#{@domain}/oauth2/token", form: {"grant_type" => "authorization_code", "code" => params[:code], "client_id" => @client_id, "redirect_uri" => @redirect_uri})).body.to_s
+    @response = HTTP.post("#{@domain}/oauth2/token", form: {"grant_type" => "authorization_code", "code" => params[:code], "client_id" => @client_id, "redirect_uri" => @redirect_uri})
+    @response_body = @response.body.to_s
   end
 
   def api
