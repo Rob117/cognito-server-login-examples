@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11551676-4659-4938-8394-6859d8af3776" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/controllers/auth_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/auth_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/auth/callback.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/auth/callback.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bundler/gems/sqlite3-ruby-102750907917" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.3.0/bundler/gems/sqlite3-ruby-102750907917" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/bundler/gems/sqlite3-ruby-102750907917" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/bundler/gems/sqlite3-ruby-102750907917" afterDir="false" />
     </list>
@@ -18,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/auth_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="240">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -55,8 +53,8 @@
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/.ebextensions/update_bundler.config" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/controllers/auth_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/auth/callback.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/auth_controller.rb" />
       </list>
     </option>
   </component>
@@ -128,7 +126,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551944487741" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551944691335" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -155,12 +153,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1551856191326</updated>
-      <workItem from="1551856194876" duration="17114000" />
+      <workItem from="1551856194876" duration="17275000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17114000" />
+    <option name="totallyTimeSpent" value="17275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="55" width="1400" height="877" extended-state="0" />
@@ -303,8 +301,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/auth_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="240">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
         </state>
       </provider>
     </entry>
