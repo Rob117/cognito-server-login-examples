@@ -3,7 +3,7 @@ class AuthController < ApplicationController
   before_action  do
     @client_id = "5d39i7ngqp27mfvsd70m0mq8o8"
     @domain = "https://wevox-test.auth.ap-northeast-1.amazoncognito.com"
-    @redirect_uri = "https://05d2ef04.ngrok.io/cognito/"
+    @redirect_uri = "https://4109b51e.ngrok.io/cognito/"
   end
   def index; end
 
@@ -29,10 +29,18 @@ class AuthController < ApplicationController
       client_id: "5d39i7ngqp27mfvsd70m0mq8o8", # required
       auth_flow: "ADMIN_NO_SRP_AUTH", # required, accepts USER_SRP_AUTH, REFRESH_TOKEN_AUTH, REFRESH_TOKEN, CUSTOM_AUTH, ADMIN_NO_SRP_AUTH, USER_PASSWORD_AUTH
       auth_parameters: {
-          USERNAME: 'test@test.com', # or params
-          PASSWORD: 'password' # or params
+          USERNAME: params[:username], # or params
+          PASSWORD: params[:password] # or params
       }
     })
     render json: {data: resp.to_h}
+  end
+
+  def decode_token
+    jwt = request.headers['jwt']
+    token = JWTDecoder.decode_id_token(jwt)
+    byebug
+    # decode
+    # print all contained fields
   end
 end
