@@ -3,7 +3,7 @@ class AuthController < ApplicationController
   before_action  do
     @client_id = "5d39i7ngqp27mfvsd70m0mq8o8"
     @domain = "https://wevox-test.auth.ap-northeast-1.amazoncognito.com"
-    @redirect_uri = "https://4109b51e.ngrok.io/cognito/"
+    @redirect_uri = "https://d2sgl1ucddhxpa.cloudfront.net/cognito/"
   end
   def index; end
 
@@ -39,8 +39,6 @@ class AuthController < ApplicationController
   def decode_token
     jwt = request.headers['jwt']
     token = JWTDecoder.decode_id_token(jwt)
-    byebug
-    # decode
-    # print all contained fields
+    render json: token
   end
 end
